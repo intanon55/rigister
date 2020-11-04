@@ -42,6 +42,8 @@ export default {
         register() {
       if(this.validate()){
         this.$store.dispatch('setRegister', this.form)
+        this.$axios.post('http://localhost:3000/api/v1/change-richmenu', {
+        });
         this.$axios.patch(`https://hffchfd-fe5c4.firebaseio.com/members/${this.$store.getters.getLine.userId}/profile.json`, this.$store.getters.getRegister).then((res) => {
           this.$router.push('/register/done')
         }).catch(e => console.log(e))         
