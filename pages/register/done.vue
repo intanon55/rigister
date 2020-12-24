@@ -13,10 +13,10 @@
         <v-col cols="12">
           <div class="set-padding">
             <div class="text-center mt-10">
-              <img src="~/assets/welcome.jpg" alt="" width="236px">
-              <h1 class="text-title">Welcome {{ StudentID }}</h1>
+              <img src="~/assets/welcome1.png" alt="" width="236px">
+              <h1 class="text-title">Welcome, {{ StudentID }}</h1>
               <p class="mt-7">
-                Welcome to the Computer Science,<br/>ยินดีต้อนรับสู่ สาขา วิทยาการคอมพิวเตอร์.<br/> We hope you have a good time here.
+                Welcome to Digital Technology Innovation,<br/>ยินดีต้อนรับ นักศึกษาป.โท สาขา นวัตกรรมเทคโนโลยีดิจิทัล .<br/> We hope you have a good time here.
               </p>
             </div>
             <v-btn rounded color="primary" dark class="w-100 mt-10 my-btn" @click="Edit">Edit</v-btn>
@@ -29,21 +29,8 @@
 </template>
 
 <script>
-window.onload = function (e) {
-      liff.init(function (data) { initializeApp(data); });
-    }
-    function initializeApp(data) {
-      jQuery("#post").click(function () {
-        jQuery.post(
-          `https://nuxt-login-62cbf.firebaseio.com/RichMenu/${this.$store.getters.getLine.userId}/profile.json`,
-          
-          function (responseText) { liff.closeWindow();},
-          "html"
-        );
-      });
-    }
 export default {  
-    mounted() {
+  mounted() {
     liff
       .init({
         liffId: "1654195194-732m4xvP",
@@ -81,7 +68,7 @@ export default {
       }      
     },
     close(){
-    liff.getProfile().then(function (profile) {
+     liff.getProfile().then(function (profile) {
 	  liff.sendMessages([
 		{
        type: 'text',
