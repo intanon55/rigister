@@ -81,7 +81,7 @@ export default {
       }      
     },
     close(){
-     liff.getProfile().then(function (profile) {
+    liff.getProfile().then(function (profile) {
 	  liff.sendMessages([
 		{
        type: 'text',
