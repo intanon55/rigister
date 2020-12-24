@@ -72,7 +72,7 @@ export default {
 	  liff.sendMessages([
 		{
        type: 'text',
-      text: "#นักศึกษาปัจจุบัน"
+      text: "นักศึกษาปัจจุบัน"
     }
 	  ]).then(function () {
 		liff.closeWindow();
