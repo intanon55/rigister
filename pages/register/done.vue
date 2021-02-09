@@ -63,7 +63,7 @@ export default {
       register() {
       if(this.validate()){
         this.$store.dispatch('setregister', this.form)
-        this.$axios.patch(`https://bot0085-default-rtdb.firebaseio.com/members/${this.$store.getters.getLine.userId}/profile.json`, this.$store.getters.getRegister).then((res) => {
+        this.$axios.patch(`https://dtimju-4f6e0-default-rtdb.firebaseio.com/members/${this.$store.getters.getLine.userId}/profile.json`, this.$store.getters.getRegister).then((res) => {
         }).catch(e => console.log(e))         
       }      
     },
