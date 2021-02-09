@@ -163,7 +163,7 @@ export default {
     isDone() {
       this.$axios
         .get(
-          `https://bot0085-default-rtdb.firebaseio.com/members/${this.$store.getters.getLine.userId}/profile.json` //รับค่าจาก firebase
+          `https://dtimju-4f6e0-default-rtdb.firebaseio.com//members/${this.$store.getters.getLine.userId}/profile.json` //รับค่าจาก firebase
         )
         .then((res) => {
           if (res.data != null) {
