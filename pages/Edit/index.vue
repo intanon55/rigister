@@ -125,7 +125,7 @@ export default {
   mounted() {
     liff
       .init({
-        liffId: "1654195194-732m4xvP",
+        liffId: "1655651326-GBxmA5Kx",
       })
       .then(() => {
         if (liff.isLoggedIn()) {
@@ -163,7 +163,7 @@ export default {
     isDone() {
       this.$axios
         .get(
-          `https://hffchfd-fe5c4.firebaseio.com/members/${this.$store.getters.getLine.userId}/profile.json`
+          `https://dtimju-4f6e0-default-rtdb.firebaseio.com/members/${this.$store.getters.getLine.userId}/profile.json`
         )
         .then((res) => {
           if (res.data != null) {
